@@ -1,0 +1,16 @@
+.veterinarian-layout {
+  display: flex;
+  height: 100vh;
+
+  .veterinarian-content-layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; // Ensure content takes up remaining space
+  }
+
+  .veterinarian-content {
+    padding: 20px;
+    background-color: #f0f2f5; // Light gray background for content
+    overflow-y: auto; // Allow scrolling if content is large
+  }
+}

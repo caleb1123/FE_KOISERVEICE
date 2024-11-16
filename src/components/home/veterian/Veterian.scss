@@ -1,0 +1,40 @@
+.featured-veterinarians {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .doctor-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .MuiCardContent-root {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      h6 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p {
+        flex-grow: 1;
+      }
+
+      .MuiButton-containedPrimary {
+        align-self: flex-start;
+        margin-top: auto;
+      }
+    }
+
+    .MuiCardMedia-root {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+}

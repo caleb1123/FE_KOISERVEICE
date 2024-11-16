@@ -1,0 +1,32 @@
+.admin-layout {
+  .logo {
+    height: 64px;
+    margin: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .admin-header {
+    background: #fff;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .admin-content {
+    margin: 24px 16px;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+  }
+
+  .admin-footer {
+    text-align: center;
+  }
+}

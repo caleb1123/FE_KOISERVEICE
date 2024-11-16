@@ -1,0 +1,44 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.login-button {
+  margin-top: 1rem;
+}
+
+.google-login-button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-login-button svg {
+  margin-right: 8px;
+}
+
+.login-box .MuiTypography-h4 {
+  text-align: center;
+}
+
+/* Add underline and color change on hover for links */
+.link-hover-effect {
+  color: #1976d2;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+.link-hover-effect:hover {
+  text-decoration: underline;
+  color: #004ba0;
+}

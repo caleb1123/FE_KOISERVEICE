@@ -1,0 +1,40 @@
+.testimonials {
+  padding: 60px 0;
+  background-color: #fff;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .testimonial-avatar {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+      }
+
+      h6 {
+        margin: 0;
+      }
+    }
+
+    .MuiRating-root {
+      margin-top: 5px;
+    }
+
+    p {
+      font-style: italic;
+      margin-top: 15px;
+    }
+  }
+}

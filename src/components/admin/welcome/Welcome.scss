@@ -1,0 +1,46 @@
+// src/components/admin/Welcome.scss
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: #f0f2f5;
+  padding: 20px;
+
+  .welcome-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    .ant-typography {
+      margin-bottom: 16px;
+    }
+
+    .welcome-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 24px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    .welcome-content {
+      padding: 20px;
+
+      .welcome-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+}

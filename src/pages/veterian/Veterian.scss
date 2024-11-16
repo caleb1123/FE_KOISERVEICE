@@ -1,0 +1,110 @@
+// src/components/doctors/Doctors.scss
+
+.doctors-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+
+  .doctors-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .ant-typography {
+      margin-bottom: 16px;
+    }
+  }
+
+  .doctors-list {
+    .doctor-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #ffffff;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .ant-card-meta-avatar {
+        font-size: 1.5rem;
+        color: #1890ff;
+      }
+
+      .ant-card-meta-title {
+        margin-top: 16px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .ant-card-meta-description {
+        font-size: 0.95rem;
+        color: rgba(0, 0, 0, 0.65);
+      }
+
+      .doctor-description {
+        margin-top: 16px;
+        font-size: 0.95rem;
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      .doctor-contact {
+        margin-top: 16px;
+
+        .ant-typography {
+          display: block;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .doctors-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .doctors-header {
+      padding: 0 10px;
+    }
+
+    .doctors-list {
+      .doctor-card {
+        img {
+          height: 150px;
+        }
+
+        .ant-card-meta-title {
+          font-size: 1.1rem;
+        }
+
+        .ant-card-meta-description {
+          font-size: 0.9rem;
+        }
+
+        .doctor-description {
+          font-size: 0.9rem;
+        }
+
+        .doctor-contact {
+          .ant-typography {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .doctors-footer .footer-content {
+      flex-direction: column;
+      text-align: center;
+
+      .social-links {
+        margin-top: 10px;
+      }
+    }
+  }
+}

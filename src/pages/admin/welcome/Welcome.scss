@@ -1,0 +1,19 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+  h1 {
+    font-size: 36px;
+    color: #1890ff;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+}

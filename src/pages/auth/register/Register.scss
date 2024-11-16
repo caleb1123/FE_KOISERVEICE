@@ -1,0 +1,39 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.register-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.register-button {
+  margin-top: 1rem;
+}
+
+.google-register-button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-register-button svg {
+  margin-right: 8px;
+}
+
+.link-hover-effect {
+  color: #1976d2; /* Default color */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
+}
+
+.link-hover-effect:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #004ba0; /* Darker blue on hover */
+}

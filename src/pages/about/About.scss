@@ -1,0 +1,241 @@
+// src/components/about/About.scss
+
+.about-page {
+  padding: 60px 20px;
+  background: #ffffff;
+
+  .introduction-section {
+    .intro-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+
+      .intro-image {
+        flex: 1 1 400px;
+        width: 400px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .intro-text {
+        flex: 1 1 400px;
+
+        .section-title {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .section-description {
+          font-size: 1rem;
+          color: rgba(0, 0, 0, 0.7);
+          margin-bottom: 20px;
+        }
+
+        .learn-more-button {
+          .ant-btn-default {
+            padding: 0 20px;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: background 0.3s, border-color 0.3s;
+
+            &:hover,
+            &:focus {
+              background: #f0f0f0;
+              border-color: #d9d9d9;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mission-vision-section {
+    .mission-card,
+    .vision-card {
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .ant-typography {
+        margin-bottom: 16px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .team-section {
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .team-card {
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .ant-card-meta-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 16px;
+      }
+
+      .ant-card-meta-description {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.65);
+      }
+
+      .team-description {
+        margin-top: 16px;
+        font-size: 0.95rem;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .why-choose-us-section {
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .feature-card {
+      text-align: center;
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .feature-icon {
+        font-size: 2rem;
+        color: #1890ff;
+        margin-bottom: 20px;
+      }
+
+      .ant-typography {
+        margin-bottom: 16px;
+      }
+
+      .ant-typography-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .ant-typography-paragraph {
+        font-size: 0.95rem;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .about-footer {
+    padding: 20px 50px;
+    background: #001529;
+    color: white;
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .copyright {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      .social-links {
+        a {
+          margin-left: 16px;
+          font-size: 1.5rem;
+          color: white;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #40a9ff;
+          }
+        }
+      }
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .introduction-section .intro-content {
+      flex-direction: column;
+      align-items: center;
+
+      .intro-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+
+      .intro-text {
+        text-align: center;
+      }
+    }
+
+    .mission-vision-section .mission-card,
+    .mission-vision-section .vision-card {
+      text-align: center;
+    }
+
+    .team-section .team-card {
+      text-align: center;
+    }
+
+    .why-choose-us-section .feature-card {
+      width: 100%;
+    }
+
+    .about-footer .footer-content {
+      flex-direction: column;
+      text-align: center;
+
+      .social-links {
+        margin-top: 10px;
+      }
+    }
+  }
+}

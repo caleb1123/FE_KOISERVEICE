@@ -1,0 +1,42 @@
+.admin-header {
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .admin-header-left {
+    padding: 0 24px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .admin-header-right {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+
+    .anticon {
+      font-size: 20px;
+      margin-left: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: #1890ff;
+      }
+    }
+
+    .admin-username {
+      margin-left: 12px;
+      font-weight: 500;
+    }
+  }
+
+  .ant-dropdown-trigger {
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}

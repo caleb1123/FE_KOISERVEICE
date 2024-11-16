@@ -1,0 +1,89 @@
+// src/components/appointments/Appointment.scss
+
+.appointment-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+
+  .appointment-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .ant-typography {
+      margin-bottom: 16px;
+    }
+  }
+
+  .appointment-steps {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+
+    .ant-steps-item-process .ant-steps-item-icon {
+      background-color: #1890ff;
+      border-color: #1890ff;
+    }
+
+    .ant-steps-item-finish .ant-steps-item-icon {
+      background-color: #52c41a;
+      border-color: #52c41a;
+    }
+
+    .ant-steps-item-error .ant-steps-item-icon {
+      background-color: #ff4d4f;
+      border-color: #ff4d4f;
+    }
+  }
+
+  .appointment-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .confirmation {
+    text-align: center;
+
+    .ant-typography {
+      margin-top: 20px;
+      margin-bottom: 16px;
+    }
+
+    .ant-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .appointment-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .appointment-content {
+      padding: 20px;
+    }
+
+    .appointment-steps {
+      padding: 0 10px;
+    }
+
+    .confirmation {
+      .ant-typography-title {
+        font-size: 1.5rem;
+      }
+
+      .ant-typography-paragraph {
+        font-size: 1rem;
+      }
+
+      .ant-btn {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// src/components/admin/ReportManagement.scss
+
+.report-management {
+  padding: 24px;
+
+  .report-chart {
+    margin-top: 24px;
+  }
+
+  .report-table {
+    margin-top: 24px;
+  }
+
+  .ant-card {
+    height: 100%;
+  }
+
+  .ant-statistic-title {
+    font-size: 1rem;
+  }
+
+  .ant-statistic-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .ant-table {
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  .ant-table-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .ant-table-cell {
+    text-align: center;
+  }
+
+  .ant-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

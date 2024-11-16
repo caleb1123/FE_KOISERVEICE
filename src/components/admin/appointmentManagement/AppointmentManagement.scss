@@ -1,0 +1,85 @@
+// src/components/admin/AppointmentManagement.scss
+
+.appointment-management {
+  padding: 24px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #001529;
+    }
+
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+  }
+
+  .ant-table {
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  .ant-form-item-label > label {
+    font-weight: bold;
+    color: #001529;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+
+    &:hover,
+    &:focus {
+      background-color: #40a9ff;
+      border-color: #40a9ff;
+    }
+  }
+
+  .ant-btn-danger {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+
+    &:hover,
+    &:focus {
+      background-color: #ff7875;
+      border-color: #ff7875;
+    }
+  }
+
+  .ant-input-number {
+    border-radius: 4px;
+  }
+
+  .ant-input,
+  .ant-input-textarea {
+    border-radius: 4px;
+  }
+
+  .ant-select-selector {
+    border-radius: 4px !important;
+  }
+
+  .ant-picker {
+    border-radius: 4px;
+  }
+
+  .ant-picker-input > input {
+    border-radius: 4px;
+  }
+}

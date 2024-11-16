@@ -1,0 +1,46 @@
+.admin-sidebar {
+  background-color: #001529; // Màu xanh đậm của Ant Design
+  color: #fff;
+
+  .admin-logo {
+    height: 64px;
+    margin: 16px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    line-height: 64px;
+    background: #002140;
+    font-weight: bold;
+  }
+
+  .ant-menu-item {
+    font-size: 16px;
+    color: #fff;
+
+    &-selected {
+      background-color: #1890ff !important;
+      color: #fff !important;
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      background-color: #1890ff;
+      color: #fff;
+    }
+
+    .anticon {
+      font-size: 18px;
+    }
+  }
+
+  .ant-layout-sider {
+    min-height: 100vh;
+  }
+}
